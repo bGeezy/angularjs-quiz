@@ -1,0 +1,36 @@
+{
+	"questionId": 2,
+	"question_text": "To create a columned list of two­line email subjects and dates for a master­detail view, which are the most semantically correct?",
+    "options": [
+        {
+            "option": "A",
+            "text": "a. <div>+<span>",
+            "correct": false
+        },
+        {
+            "option": "B",
+            "text": "b. <tr>+<td>",
+            "correct": false
+        },
+        {
+            "option": "C",
+            "text": "c. <ul>+<li>",
+            "correct": true
+        },
+        {
+            "option": "D",
+            "text": "d. <p>+<br>",
+            "correct": false
+        },
+        {
+            "option": "E",
+            "text": "e. <p>+<br>",
+            "correct": false
+        },
+        {
+            "option": "F",
+            "text": "f. <p>+<br>",
+            "correct": false
+        }
+    ]
+}

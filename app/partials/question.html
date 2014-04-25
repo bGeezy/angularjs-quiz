@@ -1,0 +1,31 @@
+<div class="app-wrapper">
+  <div class="window-header">
+      <a href="#/quiz/{{quiz.quizId}}/q/question{{question.questionId-1}}" ng-show="question.questionId > 1">
+        <div class="arrow-left"></div>
+      </a>
+      <a ng-show="question.questionId < quiz.number_of_questions && isAnswered(question.questionId)" href="#/quiz/{{quiz.quizId}}/q/question{{question.questionId+1}}">
+        <div class="arrow-right"></div>
+      </a>
+      <a ng-show="question.questionId == quiz.number_of_questions && isAnswered(question.questionId)" href="#/quiz/{{quiz.quizId}}/results">
+        <div class="refresh-icon"></div>
+      </a>
+  </div>
+
+    <div class="session-wrapper">
+      <div class="email">{{user.email}}</div>
+      <a href="#/quiz/questions"><div class="signout">Sign Out</div> </a>
+    </div>
+
+  <p class="quiz-question">{{question.question_text}}</p>
+
+  <div class="quiz-container"> 
+    <ul class="">
+      <li class="option-{{isSelected(question.questionId, option)}}" ng-click="addAnswer(question.questionId, option) " ng-repeat="option in question.options">
+        <input type="checkbox"></input><label>{{option.text}}</label>      
+      </li>
+    </ul>
+    <a class="button-purple" ng-show="question.questionId < quiz.number_of_questions && isAnswered(question.questionId)" href="#/quiz/{{quiz.quizId}}/q/{{question.questionId+1}}">Continue</a>
+    <a class="button-purple" ng-show="question.questionId == quiz.number_of_questions && isAnswered(question.questionId)" href="#/quiz/{{quiz.quizId}}/results">Submit</a>
+  </div>
+    
+</div>

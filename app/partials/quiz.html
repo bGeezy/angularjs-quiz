@@ -1,0 +1,26 @@
+{{clearAnswers()}}
+<div class="app-wrapper">
+  
+  <div class="window-header">
+      <a href="#/quiz/{{quiz.quizId}}/q/question{{question.questionId-1}}" ng-show="question.questionId > 1">
+        <div class="arrow-left"></div>
+      </a>
+      <a ng-show="question.questionId < quiz.number_of_questions && isAnswered(question.questionId)" href="#/quiz/{{quiz.quizId}}/q/question{{question.questionId+1}}">
+        <div class="arrow-right"></div>
+      </a>
+      <a ng-show="question.questionId == quiz.number_of_questions && isAnswered(question.questionId)" href="#/quiz/{{quiz.quizId}}/results">
+        <div class="refresh-icon"></div>
+      </a>
+  </div>
+
+	 <div class="session-wrapper">
+        <a href=""><div class="login" data-attribute="login" ng-click="setUser()">Login</div></a>
+        <a href=""><div class="register" data-attribute="register">Register</div></a>
+      </div>
+
+	  <div class="quiz-container"> 
+  	  	<input type="textarea" class="textarea-large" placeholder="Email"></input>
+  	  	<input type="password" class="textarea-large password" placeholder="Password"></input>
+  	  	<a class="button-purple login" type="button" href="#/quiz/{{quiz.quizId}}/q/1" ng-click="setUser({{'b@me.co'}})">Login</a>
+	  </div>
+</div>

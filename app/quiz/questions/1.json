@@ -1,0 +1,26 @@
+{
+    "questionId": 1,
+    "question_text": "1. Which is not an advantage of using a closure??",
+    "options": [
+        {
+            "option": "A",
+            "text": "a. Prevent pollution of global scope",
+            "correct": true
+        },
+        {
+            "option": "B",
+            "text": "a. Encapsulation",
+            "correct": false
+        },
+        {
+            "option": "C",
+            "text": "c. Private properties and methods",
+            "correct": false
+        },
+        {
+            "option": "D",
+            "text": "d. Allow conditional use of strict mode",
+            "correct": false
+        }
+    ]
+}

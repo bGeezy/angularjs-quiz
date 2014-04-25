@@ -1,0 +1,182 @@
+/* Top Gray Header Below */
+.arrow-left {
+  background: url('../img/sprite-small.png')  0 -1px no-repeat;
+  width: 11px;
+  height: 10px;
+}
+.arrow-right {
+  background: url('../img/sprite-small.png') -14px -1px no-repeat;
+  width: 11px;
+  height: 10px;
+}
+.refresh-icon {
+  background: url('../img/sprite-small.png') -28px -1px no-repeat;
+  width: 11px;
+  height: 10px;
+}
+.window-header {
+  background: linear-gradient(#ebebeb, #cccccc);
+  padding: 5px 5px 5px 5px;
+  border-bottom: 1px solid #999;
+  border-radius: 10px 10px 0 0; 
+  min-height: 20px;
+}
+.window-header a{
+      text-decoration: none;
+}
+.window-header div{
+  display: inline-block;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 3px;
+}
+.window-header div:hover{
+  opacity: .7;
+}
+/* Top Gray Header Above */
+
+/* Begin Window Frame */
+.app-wrapper {
+  margin: 100px auto 0;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px #cfcfcf;
+  border-radius: 10px;
+  width: 500px;
+  min-height: 400px;
+  color: #444444;
+  font-family:"Helvetica Neue", Arial, sans-serif;
+  font-weight:200;
+  -webkit-font-smoothing:antialiased;
+}
+.session-wrapper{
+  font-size: 12px;
+  padding: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.session-wrapper a {
+  margin: 0 5px;
+  display: inline-block;
+}
+.session-wrapper div {
+  color: cadetblue !important; /*Oh yeah, Cadetblue, go crazy Sublime */
+  display: inline-block;
+}
+.quiz-headers {
+  font-size: 14px;
+  text-align: center;
+}
+.quiz-score {
+  display: block;
+  margin: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+.quiz-question {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  width: 75%;
+  margin: 0 auto;
+}
+.quiz-answer {
+  display: block;
+  background: lightblue;
+  padding: 20px;
+  width: 70%;
+  margin: 10px auto 20px;
+}
+.lightgreen {
+  background: #e7f5e7;
+}
+.lightpink {
+  background: #f5e7e7;
+}
+.quiz-container {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 10px;
+  background: #ededed;
+  padding: 15px;
+  font-size: 12px;
+  border-radius: 2px;
+}
+.quiz-container div{  
+  margin: 15px;
+}
+.button-purple {
+  margin: 20px auto 0;
+  padding: 10px;
+  width: 95%;
+  background: #9b58b5;
+  font-size: 13px;
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  height: 16px;
+}
+.textarea-large {
+  height: 34px !important;
+  width: 85%;
+  margin: 10px 20px;
+  font-size: 14px;
+  font-family:"Helvetica Neue", Arial, sans-serif;
+  font-weight:100;
+  padding-left: 10px;
+  border: none;
+}
+.login {
+    width: 85%;
+}
+.button-purple:hover {
+  font-weight: normal;
+  color: white;
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+li {
+  margin-bottom: 10px;
+  line-height: 15px;
+}
+/* End Window Frame */
+
+/* Begin Purple Checkbox */
+form label {
+  float: right;
+  margin: 5px 0 10px 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  cursor: pointer !important;
+  line-height: 15px !important;
+}
+input[type="checkbox"] {
+  background: url('../img/sprite-small.png') -59px 1px no-repeat;
+  -webkit-appearance: none;
+  display: none;
+  position: absolute;
+  cursor: pointer;
+}
+label::before {
+  background: url('../img/sprite-small.png') -59px 1px no-repeat;
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 14px;
+  float: left;
+  padding-right: 8px;
+   cursor: pointer;
+}
+.option-true label::before {
+  background-position: -85px 1px;
+  cursor: pointer;
+}
+/* End Purple Checkbox */

@@ -1,0 +1,26 @@
+{
+	"questionId": 4,
+	"question_text": "____ and ____ would be the HTML tags you would use to display a menu item and its description.",
+    "options": [
+        {
+            "option": "A",
+            "text": "a. <li> & <a>",
+            "correct": true
+        },
+        {
+            "option": "B",
+            "text": "b. <ul> & <section>",
+            "correct": false
+        },
+        {
+            "option": "C",
+            "text": "c. <p> & <span>",
+            "correct": false
+        },
+        {
+            "option": "D",
+            "text": "d. I give up",
+            "correct": false
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+	"questionId": 3,
+	"question_text": "To pass an array of strings to a function, you should not use...",
+    "options": [
+        {
+            "option": "A",
+            "text": "a. fn.apply(this, stringsArray)",
+            "correct": true
+        },
+        {
+            "option": "B",
+            "text": "b. fn.call(this, stringsArray)",
+            "correct": false
+        },
+        {
+            "option": "C",
+            "text": "c. fn.bind(this, stringsArray)",
+            "correct": false
+        }
+    ]
+}

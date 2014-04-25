@@ -1,0 +1,16 @@
+{
+	"questionId": 5,
+	"question_text": "Given <div id=”outer”><div class=”inner”></div></div>, which of these two is the most performant way to select the inner div?",
+    "options": [
+        {
+            "option": "A",
+            "text": "a. getElementById('outer').children[0]",
+            "correct": false
+        },
+        {
+            "option": "B",
+            "text": "b. getElementsByClassName('inner')[0]",
+            "correct": true
+        }
+    ] 
+}

@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html ng-app="fabDevApp">
+    <head>
+        <title>Fab Dev</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/portfolio.css" rel="stylesheet">
+        <link href="css/resume.css" rel="stylesheet">
+        <link href="css/bubble.css" rel="stylesheet">
+        <link href="css/menu.css" rel="stylesheet">
+        <link media="print" href="css/print.css" rel="stylesheet" />
+
+        <script src="js/libs/underscore.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-resource.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+        <script src="js/all.js"></script>
+
+    </head>
+    <body>
+
+        <header>
+            <div id="header_content" ng-controller="BubbleController">
+                <a id="logo_link" href="/" title="Home">
+                    <h1>FabDev;</h1>
+                </a>
+                <fab-bubble id="bubble"  bubble-data="bubbleData"></fab-bubble>
+            </div>
+        </header>
+
+        <nav id="navigation_wrapper">
+            <fab-navigation id="centeredmenu" menu-items=menuItems ng-controller="NavController"></fab-navigation>
+        </nav>
+
+        <main id="page_wrapper" >
+            <div ng-view onload="onViewLoad()" class="inner_wrapper" ng-class="direction"></div>
+        </main>
+
+        <footer>
+            <div id="footer_content">
+                <div id="copyright"> © Copyright <a href="http://fab-dev.com/">fab-dev.com</a> </div>
+                <a id="html5_logo" href="http://www.w3.org/html/logo/">
+                    <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" height="32" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

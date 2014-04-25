@@ -1,0 +1,24 @@
+<div class="app-wrapper">
+	<div class="window-header">
+      <a href="#/quiz/{{quiz.quizId}}/q/question{{question.questionId-1}}" ng-show="question.questionId > 1">
+        <div class="arrow-left"></div>
+      </a>
+      <a ng-show="question.questionId < quiz.number_of_questions && isAnswered(question.questionId)" href="#/quiz/{{quiz.quizId}}/q/question{{question.questionId+1}}">
+        <div class="arrow-right"></div>
+      </a>
+      <a ng-show="question.questionId == quiz.number_of_questions && isAnswered(question.questionId)" href="#/quiz/{{quiz.quizId}}/results">
+        <div class="refresh-icon"></div>
+      </a>
+  </div>
+
+	<div class="session-wrapper">
+      <div class="email"></div>
+      <a href="#/quiz/questions"><div class="signout">Sign Out</div> </a>
+    </div>
+
+	<div class="quiz-score">You scored {{(100*correctAnswers.length/quiz.number_of_questions)| number:0}}%!</div>
+
+	<div ng-repeat="a in incorrectAnswers" class="quiz-answer lightgreen">Correct!<br/><br/>{{a}}</div>
+	<div ng-repeat="a in correctAnswers" class="quiz-answer lightpink">You answered Incorrect!<br/><br/>{{a}}</div>
+
+</div>
